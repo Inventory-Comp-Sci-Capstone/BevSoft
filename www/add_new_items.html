@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Add New Items</title>
+    </head>
+    <body>
+        <div id="add_new_items"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <ul id="navBar">
+            <li>Search</li>
+            <li>Transactions</li>
+            <li>Inventory Management</li>
+            <li>Reports</li>
+            <li>Employees</li>
+        </ul>
+        <div id="content">
+          <form>
+            <table>
+
+              <tr>
+                <td>Product: <input type="text" name="product"> </td>
+                <td>Location: <input type="text" name="location"> </td>
+              </tr>
+              <tr>
+                <td>Type: <input type="text" name="type"> </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td><input type="radio" name="location_type" value="bin">Bin </td>
+                      <td><input type="radio" name="location_type" value="rack">Rack </td>
+                      <td><input type="radio" name="location_type" value="shelf">Shelf </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>Quantity: <input type="number" name="quantity"> </td>
+                <td>Size: <input type="number" name="size"> </td>
+                <td>
+                  <select name="quantity_type">
+                    <option value="fl_oz">fl. oz.</option>
+                    <option value="mL">mL</option>
+                    <option value="L">L</option>
+                    <option value="pint">Pint</option>
+                    <option value="gal">Gal</option>
+                  </select>
+                </td>
+              </tr>
+              <tr><td style="padding: 0px 0px 0px 50px"><input type="radio" name="quantity_type" value="Crate" >Crate </td></tr>
+              <tr><td style="padding: 0px 0px 0px 50px"><input type="radio" name="quantity_type" value="Single">Single </td></tr>
+              <tr><td style="padding: 0px 0px 0px 50px"><input type="radio" name="quantity_type" value="Other">Other </td></tr>
+              <tr><td>Price: <input type="number" min="0.01" step="0.01" max="2500" name="price"> </td></tr>
+              <tr><td>Expiration Date: <input type="date" name="expr_date"> </td></tr>
+              <tr><td>Supplier: <input type="text" name="supplier"> </td></tr>
+            </table>
+
+            <br><br>
+
+            <input type="submit" value="Finish">
+
+          </form>
+
+
+        </div>
+
+
+    </body>
+</html>
