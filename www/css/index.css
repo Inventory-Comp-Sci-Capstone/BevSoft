@@ -111,11 +111,15 @@ h1 {
     background-color: #7491A3;
 }
 #notification {
-    text-align: 100%;
-    color: red;
-    font-family: serif;
-
+    width: 50%;
+    margin: 0 auto;
 }
 li a:hover{
     color: yellow;
+}
+
+#search_button {
+    padding-top: 10%;
+    width: 50%;
+    margin: auto;
 }
