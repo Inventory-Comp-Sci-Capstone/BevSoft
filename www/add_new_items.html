@@ -32,10 +32,9 @@
         </ul>
         <div id="content">
           <form>
-            <table>
-
+            <table width="100%">
               <tr>
-                <td>Product: <input type="text" name="product"> </td>
+                <td width="30%">Product: <input type="text" name="product"> </td>
                 <td>Location: <input type="text" name="location"> </td>
               </tr>
               <tr>
@@ -63,10 +62,30 @@
                   </select>
                 </td>
               </tr>
-              <tr><td style="padding: 0px 0px 0px 50px"><input type="radio" name="quantity_type" value="Crate" >Crate </td></tr>
-              <tr><td style="padding: 0px 0px 0px 50px"><input type="radio" name="quantity_type" value="Single">Single </td></tr>
-              <tr><td style="padding: 0px 0px 0px 50px"><input type="radio" name="quantity_type" value="Other">Other </td></tr>
-              <tr><td>Price: <input type="number" min="0.01" step="0.01" max="2500" name="price"> </td></tr>
+              <tr>
+                  <td style="padding: 0px 0px 0px 50px">
+                      <input type="radio" name="quantity_type" value="Crate">
+                      <font size="4">Crate</font> 
+                  </td>
+              </tr>
+              <tr>
+                  <td style="padding: 0px 0px 0px 50px">
+                      <input type="radio" name="quantity_type" value="Single">
+                      <font size="4">Single</font> 
+                  </td>
+              </tr>
+              <tr>
+                  <td style="padding: 0px 0px 0px 50px">
+                      <input type="radio" name="quantity_type" value="Other">
+                      <font size="4">Other</font> 
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <font size="2">Price:</font>
+                      <input type="number" min="0.01" step="0.01" max="2500" name="price">
+                  </td>
+              </tr>
               <tr><td>Expiration Date: <input type="date" name="expr_date"> </td></tr>
               <tr><td>Supplier: <input type="text" name="supplier"> </td></tr>
             </table>
