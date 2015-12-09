@@ -14,7 +14,7 @@ body {
         linear,
         left top,
         left bottom,
-        color-stop(0, #A7A7A7),
+        color-stop(0, #232),
         color-stop(0.51, #E4E4E4)
     );
     background-attachment:fixed;
@@ -101,15 +101,6 @@ h1 {
     list-style: none;
 
 }
-#navBar li {
-    text-align: left;
-    color: blue;
-    display: block;
-    width: 60px;
-    padding: 50px 75px 50px 50px;
-    border: 60%;
-    background-color: #7491A3;
-}
 #notification {
     width: 50%;
     margin: 0 auto;
@@ -122,4 +113,25 @@ li a:hover{
     padding-top: 10%;
     width: 50%;
     margin: auto;
+}
+
+
+.alert {
+    text-align: center;
+    margin-left: 80%;
+    margin-right: %;
+    
+    
+}
+
+.nav {
+    border-style: solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-width: thin;
+}
+
+.btn {
+    
 }
