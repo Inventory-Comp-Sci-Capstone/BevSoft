@@ -13,10 +13,7 @@
     <li><a href="employees.html" data-toggle="tab">Employees</a></li>
 </ul>
 
-<body>
-    <h1>Example</h1>
-    <p>Database</p>
-    
+<body>   
 
      <script type = "text/javascript" 
          src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -51,12 +48,12 @@
 
                  
 
-                $('#name').prepend(item.name + '<br>');
-                $('#brand').prepend(item.brand_name + '<br>');
-                $('#quantity').prepend(item.quantity + '<br>');
-                $('#type').prepend(item.type_name + '<br>');
-                $('#price').prepend(item.price + '<br>');
-                $('#supplier').prepend(item.supplier_name + '<br>');
+                $('#name').prepend(item.name + '<br><div style="border-bottom-style: ridge;border-width: 1px; border-color: "#a1aeb3""></div><br>');
+                $('#brand').prepend(item.brand_name + '<br><div style="border-bottom-style: ridge;border-width: 1px; border-color: "#a1aeb3""></div><br>');
+                $('#quantity').prepend(item.quantity + '<br><div style="border-bottom-style: ridge;border-width: 1px; border-color: "#a1aeb3""></div><br>');
+                $('#type').prepend(item.type_name + '<br><div style="border-bottom-style: ridge;border-width: 1px; border-color: "#a1aeb3""></div><br>');
+                $('#price').prepend(item.price + '<br><div style="border-bottom-style: ridge;border-width: 1px; border-color: "#a1aeb3""></div><br>');
+                $('#supplier').prepend(item.supplier_name + '<br><div style="border-bottom-style: ridge;border-width: 1px; border-color: "#a1aeb3""></div><br>');
 
 
             });
@@ -74,6 +71,12 @@
     </script>
   </body>
 
+<div class="btn-group btn-group-justified" style="PADDING-BOTTOM: 15px; PADDING-TOP: 30px">
+  <a href="add_new_items.html" class="btn btn-default">Add Item</a>
+  <a href="#" class="btn btn-default">Edit Item</a>
+  <a href="#" class="btn btn-default">Remove Item</a>
+</div>
+
 <table class="table table-striped table-hover ">
   <thead>
     <tr>
@@ -88,9 +91,9 @@
   </thead>
   <tbody>
     <tr>
-      <td id="name"></td>
+      <td id="name" style="width: 25%; "></td>
       <td id="type"></td>
-      <td id="brand"></td>
+      <td id="brand" style="width: 15%"></td>
       <td id="quantity"></td>
       <td id="size"></td>
       <td id="price"></td>
@@ -99,11 +102,7 @@
   </tbody>
 </table>
 
-<div class="btn-group btn-group-justified">
-  <a href="add_new_items.html" class="btn btn-default">Add Item</a>
-  <a href="#" class="btn btn-default">Edit Item</a>
-  <a href="#" class="btn btn-default">Remove Item</a>
-</div>
+
 
 </html>
 
