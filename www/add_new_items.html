@@ -23,7 +23,7 @@
         <script type="text/javascript">
             app.initialize();
         </script>
-        <ul class="nav nav-bar nav-justified">
+        <ul class="nav nav-tabs nav-justified">
             <li><a href="search.html" data-toggle="tab">Search</a></li>
             <li><a href="transaction.html" data-toggle="tab">Transactions</a></li>
             <li class="active"><a href="inventory_list.html" data-toggle="tab">Inventory</a></li>
@@ -31,12 +31,12 @@
             <li><a href="employees.html" data-toggle="tab">Employees</a></li>
         </ul>
 
-        <div id="content">
-          <form id ="myForm" action='http://127.0.0.1/insert_to_db.php' method='post'>
-            <table>
+        <div id="content" class ="form-group">
+          <form id ="myForm" class= "form-horizontal" action='http://127.0.0.1/insert_to_db.php' method='post'>
+            <table class = "add_item_table">
 
               <tr>
-                <td>Product: <input type="text" name="name"> </td>
+                  <td>Product: <input type="text" name="name" ></td>
                 <td>Brand: <input type="text" name="brand_id"> </td>
                 <td>Location: <input type="text" name="location"> </td>
               </tr>
@@ -75,8 +75,9 @@
 
             <br><br>
 
-            <input type="submit" value="Finish">
-            <button id="sub">Save</button>
+            <!--<input type="submit" value="Finish">-->
+            <button id = "sub" type="submit" class="btn btn-primary">Save</button>
+            <!--<button id="sub">Save</button>-->
           </form>
 
 

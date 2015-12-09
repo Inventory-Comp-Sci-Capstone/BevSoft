@@ -1,5 +1,6 @@
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+   
+    /*-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
 body {
@@ -15,7 +16,7 @@ body {
         left top,
         left bottom,
         color-stop(0, #232),
-        color-stop(0.51, #E4E4E4)
+        color-stop(0.51, #5710e3)
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -134,4 +135,21 @@ li a:hover{
 
 .btn {
     
+}
+
+.add_item_table {
+    background-color: transparent;
+}
+
+#input_box {
+    animation-fill-mode: 
+}
+
+
+
+
+
+input {
+    border-radius: 5%;
+  
 }
