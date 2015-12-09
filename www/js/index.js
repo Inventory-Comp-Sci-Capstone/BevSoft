@@ -46,4 +46,8 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+
+
 };
+
+var dbShell = window.openDatabase('bev_soft', '1.0', 'Inventory', 1000000);
