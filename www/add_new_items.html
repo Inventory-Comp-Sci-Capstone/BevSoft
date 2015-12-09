@@ -30,12 +30,14 @@
             <li><a href="report.html" data-toggle="tab">Reports</a></li>            
             <li><a href="employees.html" data-toggle="tab">Employees</a></li>
         </ul>
+
         <div id="content">
-          <form>
+          <form id ="myForm" action='http://127.0.0.1/insert_to_db.php' method='post'>
             <table>
 
               <tr>
-                <td>Product: <input type="text" name="product"> </td>
+                <td>Product: <input type="text" name="name"> </td>
+                <td>Brand: <input type="text" name="brand_id"> </td>
                 <td>Location: <input type="text" name="location"> </td>
               </tr>
               <tr>
@@ -74,12 +76,29 @@
             <br><br>
 
             <input type="submit" value="Finish">
-
+            <button id="sub">Save</button>
           </form>
 
 
         </div>
-
+        <script type="text/javascript">
+          $("#sub").click( function() {
+         $.post( $("#myForm").attr("action"),
+                 $("#myForm :input").serializeArray(),
+                 function(info){ $("#result").html(info);
+           });
+        clearInput();
+        });
+         
+        $("#myForm").submit( function() {
+          return false;
+        });
+        function clearInput() {
+            $("#myForm :input").each( function() {
+               $(this).val('');
+            });
+        }
+        </script>
 
     </body>
 </html>
