@@ -1,5 +1,6 @@
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+   
+    /*-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
 body {
@@ -134,4 +135,21 @@ li a:hover{
 
 .btn {
     
+}
+
+.add_item_table {
+    background-color: transparent;
+}
+
+#input_box {
+    animation-fill-mode: 
+}
+
+
+
+
+
+input {
+    border-radius: 5%;
+  
 }
